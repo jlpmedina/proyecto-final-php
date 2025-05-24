@@ -1,0 +1,19 @@
+{
+  "name": "PHP Web",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [80],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "postCreateCommand": "composer install || true",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "felixfbecker.php-debug",
+        "bmewburn.vscode-intelephense-client"
+      ]
+    }
+  }
+}
